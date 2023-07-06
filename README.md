@@ -5,7 +5,7 @@
 ![Static Badge](https://img.shields.io/badge/pyarrow-12.0.1-blue) 
 
 ## Define .env
-Create your .env file in the following format:
+Create your .env file in the following format with Snowflake credentials:
 ```env
 USER=
 PASSWORD=
@@ -20,7 +20,7 @@ TARGET_TABLE=
 It will generate an .exe file with the program in 
 > dist/main.exe
 
-## Describe the measures in PBI file
+## Describe the measures in PBI file and use the tool
 Script will automatically select measures with descriptions to be loaded into snowflake, so it is recommended to describe measures into PBI files itself instead of measure export tool as this way you would only need to do it once.
 To describe the measure in PowerBI you should open Tabular Editor (external tool), select measure, find in category "Basic" option "Description" and leave a comment here.
 When you open a script later you will see green lines for measures with comments and last column "Load" will have value "True", which means that it will be loaded to Snowflake.
