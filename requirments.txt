@@ -1,0 +1,4 @@
+python-dotenv
+snowflake-connector-python
+pyinstaller
+pyarrow
