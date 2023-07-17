@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from tkinter import ttk
@@ -7,20 +6,11 @@ import json
 import zipfile
 import snowflake.connector
 
-# Load environment variables from .env file
-load_dotenv()
 
-# Snowflake connection details
-snowflake_config = {
-    'user': os.getenv('USER'),
-    'password': os.getenv('PASSWORD'),
-    'account': os.getenv('ACCOUNT'),
-    'warehouse': os.getenv('WAREHOUSE'),
-    'database': os.getenv('DATABASE'),
-    'schema': os.getenv('SCHEMA'),
-    'target_table': os.getenv('TARGET_TABLE')
-}
+# Place for bind params
+# --------
 
+# --------
 
 class MeasureLoaderApp(tk.Tk):
     def __init__(self):
