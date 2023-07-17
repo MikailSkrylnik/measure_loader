@@ -22,7 +22,7 @@ It will generate an .exe file with the program in
 
 ## Describe the measures in PBI file and use the tool
 Script will automatically select measures with descriptions to be loaded into snowflake, so it is recommended to describe measures into PBI files itself instead of measure export tool as this way you would only need to do it once.
-To describe the measure in PowerBI you should open Tabular Editor (external tool), select measure, find in category "Basic" option "Description" and leave a comment here.
+To describe the measure in PowerBI you should go to the Model tab, select measure and leave a description or open Tabular Editor (external tool), select measure, find in category "Basic" option "Description" and leave a comment here.
 When you open a script later you will see green lines for measures with comments and last column "Load" will have value "True", which means that it will be loaded to Snowflake.
 All you need to do now is to check that all measures you would like to export are included (if they are not, change comment manually and click on "False" in "Load" column) and click "Load to Snowflake"
 
