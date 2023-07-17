@@ -4,6 +4,10 @@ echo "Installing packages..."
 
 pip install -r requirments.txt
 
+echo "Binding params"
+
+python bind.py
+
 echo "Building Measure Loader..."
 echo "Compiling Python files..."
 
